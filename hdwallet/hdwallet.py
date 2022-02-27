@@ -35,7 +35,7 @@ from hashlib import sha256
 from typing import (
     Optional, Any, Union
 )
-# immaking a change to the code for a test
+
 import hmac
 import ecdsa
 import struct
@@ -153,7 +153,7 @@ class HDWallet:
         >>> hdwallet.from_entropy(entropy="ee535b143b0d9d1f87546f9df0d06b1a", language="english", passphrase=None)
         <hdwallet.hdwallet.HDWallet object at 0x000001E8BFB98D60>
         """
-#another test here
+
         if not is_entropy(entropy=entropy):
             raise ValueError("Invalid entropy.")
         if language and language not in ["english", "french", "italian", "japanese",
